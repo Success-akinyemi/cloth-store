@@ -1,0 +1,123 @@
+.orderPage{
+    margin-top: 1.4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.orderPage .orderSpinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.orderPage .errorMsg{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-danger);
+}
+
+.orderPage .container{
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.orderPage .container .top{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.orderPage .container .top .info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orderPage .container .top .info span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.orderPage .container .middle{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--text-color-3);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.orderPage .container .middle:last-child{
+    border-bottom: none;
+}
+
+.orderPage .container .middle .img{
+    flex: 1;
+}
+
+.orderPage .container .middle .img img{
+    width: 90%;
+}
+
+.orderPage .container .middle .productInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.orderPage .container .middle .productInfo span{
+    margin-bottom: 8px;
+}
+
+.orderPage .container .bottom{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.orderPage .container .bottom h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.orderPage .checked{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.orderPage .checked .completeOrder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orderPage .checked .completeOrder{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+.orderPage .checked .completeOrder button{
+    background: var(--color-success);
+    color: var(--color-white);
+    padding: var(--padding-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 20px;
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}

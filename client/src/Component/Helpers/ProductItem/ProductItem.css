@@ -1,0 +1,104 @@
+.productItem{
+    min-width: 260px;
+    max-width: 260px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+}
+
+.productItem .productLink{
+    width: 100%;
+    height: 80%;
+}
+
+.productItem .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.productItem .info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.productItem .info .top,
+.productItem .info .bottom{
+    width: 100%;
+}
+
+.productItem .info .top{
+    font-size: 20px;
+    font-size: 600;
+}
+
+.productItem .info .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productItem .info .bottom .left{
+    font-weight: 700;
+    font-size: 18px;
+    background: none;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: cursive;
+}
+
+.productItem .info .bottom .left .discountBox{
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.productItem .info .bottom .left .discountBox .originalPrice{
+    margin-top: -7px;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.productItem .info .bottom .left .icon{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.productItem .info .bottom .left .icon:hover{
+    transform: scale(1.09);
+}
+
+.productItem .info .bottom .right{
+    padding: 8px 5px;
+    background: var(--color-1);
+    color: var(--text-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    gap: 5px;
+    transition: all 0.7s ease-in-out;
+    font-family: cursive;
+}
+
+.productItem .info .bottom .right:hover{
+    flex-direction: row-reverse;
+}
+
+.productItem .info .bottom .right .icon{
+    color: var(--text-color-2);
+}

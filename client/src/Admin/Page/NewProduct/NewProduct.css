@@ -1,0 +1,197 @@
+.newProduct{
+    margin-top: 1.4rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.newProduct .newProductForm{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.newProduct .newProductForm .uploadImg{
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-3);
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.newProduct .newProductForm .uploadImg .imgBtn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.newProduct .newProductForm .uploadImg .imgBtn h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.newProduct .newProductForm .productImageCard{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newProduct .productImageCard .productImage{
+    width: 60%;
+}
+
+.newProduct .productImageCard .productImageIcon{
+    height: 120px;
+    width: 100%;
+}
+
+.newProduct .newProductForm .formInputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.4rem;
+    background: transparent;
+    gap: 1.5rem;
+}
+
+.newProduct .newProductForm .formInputs > input{
+    background: var(--color-white);
+    width: 50%;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+}
+
+.newProduct .newProductForm .h-3{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.newProduct .newProductForm select{
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    padding: 0.5rem 1.6rem;
+    outline: none;
+    border: none;
+}
+
+.newProduct .newProductForm option{
+    background: transparent;
+    color: var(--color-dark);
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.newProduct .newProductForm .selectedCat{
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.newProduct .newProductForm .selectedCat .items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.newProduct .newProductForm .selectedCat .selectedCatItem{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-top: 2rem;
+    padding: 0.4rem 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.newProduct .newProductForm .selectedCat .selectedCatItem .close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newProduct .newProductForm .selectedCat .selectedCatItem .closeIcon{
+    cursor: pointer;
+    color: var(--color-danger);
+    font-size: 2rem;
+}
+
+.newProduct .newProductForm .priceDiscount{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.newProduct .newProductForm .priceDiscount .inputs label{
+    margin-right: 1rem;
+}
+
+.newProduct .newProductForm .priceDiscount .discountBox{
+    margin-top: 1rem;
+}
+
+.newProduct .newProductForm .priceDiscount .discountBox .inputs input{
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid var(--color-primary);
+    border-radius: 10px;
+}
+
+.newProduct .newProductForm .discountBox span{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+
+.newProduct .newProductForm  .submit{
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.newProduct .newProductForm  .submit .submitBtn{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: var(--border-radius-3);
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .newProduct .newProductForm .uploadImg{
+        padding: 5px;
+    }
+
+    .newProduct .productImageCard .productImage{
+        width: 100%;
+    }
+
+    .newProduct .newProductForm .formInputs > input{
+        width: 100%;
+    }
+
+    .newProduct .newProductForm  .submit{
+        width: 100%;
+    }
+}

@@ -1,0 +1,174 @@
+.category{
+    margin-top: 1.4rem;
+}
+
+.category .categoryForm{
+    margin-top: 4rem;
+}
+
+.category .h-3{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.category .categoryForm .uploadImg{
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-3);
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.category .uploadImg .imgBtn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.category .uploadImg .imgBtn h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.category .categoryForm .productImageCard{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category .productImageCard .productImage{
+    width: 60%;
+}
+
+.category .productImageCard .productImageIcon{
+    height: 120px;
+    width: 100%;
+}
+
+.category .categoryForm .formInput{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.4rem;
+    background: transparent;
+    gap: 1rem;
+    width: 50%;
+}
+
+.category .categoryForm .formInput > input{
+    background: var(--color-white);
+    width: 100%;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+}
+
+.category .categoryForm .categoryBtn{
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.category .categoryForm .categoryBtn .btn{
+    width: 100%;
+    background: var(--color-primary);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.category .availableCat{
+    margin-top: 2rem;
+}
+
+.category .availableCat .content{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category .content .card{
+    background: var(--color-white);
+    padding: 1.6rem;
+    border-radius: var(--border-radius-1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+}
+
+.category .content .card .catImg{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.category .content .card .info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.category .content .card .info .name{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.category .content .card .info .options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.category .card .info .options .delete{
+    color: var(--color-danger);
+    cursor: pointer;
+}
+
+.category .card .info .options .edit{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.category .card .info .options .optionsIcon{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .category .categoryForm .formInput{
+        width: 80%;
+    }
+
+    .category .categoryForm .categoryBtn{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .category .categoryForm .formInput{
+        width: 100%;
+    }
+
+    .category .categoryForm .categoryBtn{
+        width: 100%;
+    }
+}

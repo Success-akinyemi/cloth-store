@@ -1,0 +1,102 @@
+.dashboard{
+    margin-top: 1.4rem;
+}
+
+.dashboard .date{
+    margin-top: 3rem;
+}
+
+.dashboard .date select{
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    padding: 0.5rem 1.6rem;
+    outline: none;
+    border: none;
+}
+
+.dashboard .date select option{
+    background: transparent;
+    color: var(--color-dark);
+    border: none;
+    outline: none;
+}
+
+.dashboard .insights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.dashboard .insights > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard .insights > div:hover{
+    box-shadow: none;
+}
+
+.dashboard .insights > div span{
+    background: coral;
+    padding: 0.5rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard .insights > div.deliverd span{
+    background: var(--color-success);
+}
+
+.dashboard .insights > div.pending span{
+    background: var(--color-danger);
+}
+
+.dashboard .insights .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.dashboard .insights h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+.dashboard .insights > div small{
+    margin-top: 3rem;
+}
+
+.dashboard .newOrders{
+    margin-top: 2rem;
+}
+
+.dashboard .newOrders h2{
+    margin-bottom: 2rem; 
+}
+
+.dashboard .newOrders .menuLink{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 1200px) {
+    .dashboard .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}

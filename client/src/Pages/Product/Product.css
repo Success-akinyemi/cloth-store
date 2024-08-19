@@ -1,0 +1,231 @@
+.product{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.loadingContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.product .content{
+    padding-top: 70px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.product .content .left,
+.product .content .right{
+    flex: 1;
+}
+
+
+.product .content .left .productImg{
+    width: 100%;
+    object-fit: cover;
+}
+
+.product .content .right{
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product .content .right .productName{
+    font-size: 40px;
+    width: 100%;
+}
+
+.product .content .right .productDesc{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.product .content .right .productPrice{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.product .content .right .productPrice .discountBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.product .content .right .productPrice .discountBox .originalPrice{
+    font-size: 14px;
+}
+
+.product .content .right .productPrice .discountBox .originalPrice small{
+    color: var(--text-color-2);
+    text-decoration: none;
+    background: var(--color-1);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.product .content .right .colors{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product .content .right .colors .colorPlate{
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.product .content .right .colors .colorCircle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+.product .content .right .productSize{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product .content .right .size .productSelect{
+    margin-top: 5px;
+    padding: 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+.product .content .right .selectedSize{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.product .content .right .selectedSize .items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product .content .right .selectedSize .selectedSizeItem{
+    background: rgba(132, 139, 200, 0.18);
+    color: #7380ec;
+    margin-top: 2rem;
+    padding: 0.2rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.product .content .right .selectedSize .selectedSizeItem .close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .content .right .selectedSize .selectedSizeItem .closeIcon{
+    cursor: pointer;
+    color: var(--color-danger);
+    font-size: 2rem;
+}
+
+.product .content .right .instock{
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.product .content .right .instock.yellow{
+    color: #ffbb55;
+}
+
+.product .content .right .instock.green{
+    color: #41f1b6;
+}
+
+.product .content .right .quantity{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.product .content .right .quantity .title{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.product .content .right .quantity .q-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product .content .right .quantity .qbtn{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--text-color-3);
+    border-radius: 5px;
+}
+
+.product .content .right .quantity .qbtn .icon{
+    font-size: 24px;
+}
+
+.product .content .right .quantity .number{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product .content .right .btn{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.product .content .right .btn button{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--color-1);
+    color: var(--text-color-2);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.product .content .right .btn button:hover{
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 450px) {
+    .product .content{
+        flex-direction: column;
+    }
+}

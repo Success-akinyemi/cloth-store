@@ -1,0 +1,23 @@
+.mobileNav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background: var(--text-color-2);
+    z-index: 999;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobileNav .moblieNavLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileNav .moblieNavLink.active{
+    color: purple;
+}

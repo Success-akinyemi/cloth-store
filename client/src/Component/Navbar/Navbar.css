@@ -1,0 +1,133 @@
+.navbar{
+    width: 100%;
+    max-width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-1);
+    padding: 30px;
+    z-index: 999;
+}
+
+.navbar .left{
+    display: flex;
+    gap: 24px;   
+}
+
+.navbar .left .logo{
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.navbar .left .username{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .left .username .p-1{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navbar .left .username .p-1 span{
+    font-weight: 600;
+}
+
+.navbar .left .username .p-2{
+    font-size: 14px;
+}
+
+.navbar .right{
+    display: flex;
+    gap: 24px;
+    max-height: 100%;
+    align-items: center;
+}
+
+.navbar .right .navprofile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.navbar .right .navprofile .profileImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+
+.navbar .right .isUser{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .right .adminLink{
+    display: flex;
+    align-items: center;
+    background: var(--color-1);
+    margin-right: 5px;
+    padding: 5px;
+    color: var(--text-color-2);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        border-bottom: none;
+    }
+
+    .navbar .right .isUser{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar{
+        height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        overflow-x: hidden;
+    }
+
+    .navbar .left .logo{
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .left .username .p-1{
+        font-size: 12px;
+    }
+
+    .navbar .left .username .p-2{
+        font-size: 10px;
+    }
+
+    .navbar .right .navprofile{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar .left .logo{
+        font-size: 14px;
+    }
+    
+    .navbar .left .username .p-2{
+        display: none;
+    }
+}

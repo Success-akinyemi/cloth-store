@@ -1,0 +1,179 @@
+.adminMenu{
+    height: 100vh;
+    width: 15rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: var(--color-white);
+}
+
+.adminMenu .top{
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adminMenu .top .logo{
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.adminMenu .top .close{
+    display: none;
+}
+
+.adminMenu .menuList{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 3rem;
+}
+
+.adminMenu .menuLinks{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+.adminMenu .menuLinks .menuLinks-icon{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+.adminMenu .menuLinks.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+.adminMenu .menuLinks.active::before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+.adminMenu .menuLinks.active .menuLinks-icon{
+    color: var(--color-primary);
+    margin-left: calc(1rem -6px );
+}
+
+.adminMenu .menuLinks:hover{
+    color: var(--color-primary);
+}
+
+.adminMenu .menuLinks:hover .menuLinks-icon{
+    margin-left: 1rem;
+}
+
+.adminMenu .menuList .menuLinks .menuLink{
+    font-weight: 500;
+}
+
+.adminMenu .bottom{
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.adminMenu .bottom span{
+    color: var(--color-info-dark);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.adminMenu .bottom span:hover{
+    color: var(--color-danger);
+}
+
+@media screen and (max-width: 1200px) {
+    .adminMenu{
+        width: 7rem;
+    }
+
+    .adminMenu .top .logo{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .adminMenu .menuList .menuLinks .menuLink{
+        display: none;
+    }
+
+    .adminMenu .menuLinks .menuLinks-icon{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .adminMenu{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 18rem;
+        z-index: 10;
+        height: 100vh;
+        padding-right: var(--card-padding);
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+    }
+
+    .adminMenu.show{
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
+    }
+
+    .adminMenu .top .logo{
+        font-size: 40px;
+    }
+
+    .adminMenu .menuList .menuLinks .menuLink{
+        display: inline;
+    }
+
+    .adminMenu .menuLinks{
+        height: 3.4rem;
+    }
+
+    .adminMenu .bottom{
+        margin-bottom: 7rem;
+    }
+
+    .adminMenu .top .close{
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .adminMenu .top .close .closeIcon{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .adminMenu .top .logo{
+        font-size: 30px;
+    }
+
+    .adminMenu .bottom{
+        margin-bottom: 2rem;
+    }
+}

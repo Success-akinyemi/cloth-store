@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --main-bg: rgb(197, 203, 211);
+  --primary-color: rgb(241 245 249 / 1);
+  --text-color-1: rgb(51 65 85 / 1);
+  --text-color-2: #fff;
+  --text-color-3: #e6e3e3;
+  --text-color-4: #333;
+
+  --color-1: purple;
+  --color-1-opa: rgba(128, 0, 128, 0.582);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg{
+  background: var(--primary-color);
+  overflow-x: hidden;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
+.pending{
+  color: #ffbb55;
+}
+
+.delivered{
+  color: #41f1b6;
+}

@@ -1,0 +1,250 @@
+.product{
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.product .h-1 small{
+    font-size: 14px;
+}
+
+.product .spin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.product .content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.product .content .h-2{
+    font-size: 30px;
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.product .content .img{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.product .content .img img{
+    width: 100%;
+}
+
+.product .content .newProductForm .uploadImg{
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-3);
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.product .content .newProductForm .uploadImg .imgBtn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.product .content .newProductForm .uploadImg .imgBtn h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.product .content .newProductForm .productImageCard{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .content .productImageCard .productImage{
+    width: 60%;
+}
+
+.product .content .productImageCard .productImageIcon{
+    height: 120px;
+    width: 100%;
+}
+
+.product .content .newProductForm .formInputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.4rem;
+    background: transparent;
+    gap: 1.5rem;
+}
+
+.product .content .newProductForm .formInputs .formInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.product .content .newProductForm .formInputs .formInput > label{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.product .content .newProductForm .formInputs .formInput > input{
+    background: var(--color-white);
+    width: 100%;
+    padding: 10px;
+    font-size: 1.4rem;
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+}
+
+.product .content .newProductForm .h-2{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.product .content .newProductForm .h-3{
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.product .content .newProductForm select{
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    padding: 0.5rem 1.6rem;
+    outline: none;
+    border: none;
+}
+
+.product .content .newProductForm option{
+    background: transparent;
+    color: var(--color-dark);
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.product .content .newProductForm .selectedCat{
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .content .newProductForm .selectedCat .items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.product .content .existingCat .h-3{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.product .content .existingCat .exist{
+    display: flex;
+    grid-area: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.product .content .newProductForm .selectedCat .selectedCatItem,
+.product .content .existingCat .exist .existSpan{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-top: 2rem;
+    padding: 0.4rem 1.4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.product .content .newProductForm .selectedCat .selectedCatItem .close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .content .newProductForm .selectedCat .selectedCatItem .closeIcon{
+    cursor: pointer;
+    color: var(--color-danger);
+    font-size: 2rem;
+}
+
+.product .content .newProductForm .priceDiscount{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product .content .newProductForm .priceDiscount p{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+
+.product .content .newProductForm .priceDiscount .inputs label{
+    margin-right: 1rem;
+}
+
+.product .content .newProductForm .priceDiscount .discountBox{
+    margin-top: 1rem;
+}
+
+.product .content .newProductForm .priceDiscount .discountBox .inputs input{
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid var(--color-primary);
+    border-radius: 10px;
+}
+
+.product .content .newProductForm .discountBox span{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+
+.product .content .newProductForm  .submit{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.product .content .newProductForm  .submit .submitBtn{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: var(--border-radius-3);
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.5rem;
+}

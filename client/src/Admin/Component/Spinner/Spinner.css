@@ -1,0 +1,64 @@
+.spinner{
+    height: 25px;
+    width: 25px;
+    position: relative;
+}
+
+.spinner .ball{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner .upper{
+    top: -25px;
+    background: var(--color-primary);
+    left: 0;
+    animation: upper 1s infinite;
+}
+
+@keyframes upper {
+    50%, 100% {
+        top: 25px;
+    }
+}
+
+.spinner .right{
+    bottom: 0;
+    right: -25px;
+    background: var(--color-danger);
+    animation: right 1s infinite;
+}
+
+@keyframes right {
+    50%, 100% {
+        right: 25px;
+    }
+}
+
+.spinner .lower{
+    bottom: -25px;
+    right: 0;
+    background: var(--color-success);
+    animation: lower 1s infinite;
+}
+
+@keyframes lower {
+    50%, 100% {
+        bottom: 25px;
+    }
+}
+
+.spinner .left{
+    bottom: 0;
+    left: -25px;
+    background: var(--color-warning);
+    animation: left 1s infinite;
+}
+
+@keyframes left {
+    50%, 100% {
+        left: 25px;
+    }
+}

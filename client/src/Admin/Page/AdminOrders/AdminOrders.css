@@ -1,0 +1,98 @@
+.orderContainer{
+    width: 100%;
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.orderContainer .o-spinner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.orderContainer .errorMsg{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-danger);
+}
+
+.orderContainer .o-table{
+    margin-top: 4rem;
+}
+
+.orderContainer .o-table .sort{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.orderContainer .o-table .sort .sortBox{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.orderContainer .o-table .sort .sortBox label{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.orderContainer .o-table .sort .sortBox select{
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    padding: 0.5rem 1.6rem;
+    outline: none;
+    border: none;
+}
+
+.orderContainer .o-table .sort .sortBox select option{
+    background: transparent;
+    color: var(--color-dark);
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.orderContainer .pagination{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.orderContainer .pagination button{
+    display: flex;
+    align-items: center;
+    background: red;
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 800px;
+    color: var(--color-dark);
+}
+
+.orderContainer .pagination button.btn2{
+    background: var(--color-primary);
+}
+
+.orderContainer .pagination button.btn1{
+    background: var(--color-light);
+}
+
+@media screen and (max-width: 768px) {
+    .orderContainer{
+        margin-bottom: 3rem;
+    }
+}

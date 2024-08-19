@@ -1,0 +1,121 @@
+.orders{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.orders .content{
+    padding-top: 70px;
+    width: 100%;
+    margin-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.orders .content h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.orders .container{
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.orders .container .card{
+    background: var(--text-color-2);
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+
+.orders .container .card small{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.orders .container .card .top{
+    display: flex;
+    flex-direction: column;
+}
+
+.orders .container .card .top .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.orders .container .card .top .info > span{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.orders .container .card .top .info span .payment{
+    font-weight: 700;
+}
+
+.orders .container .card .middle{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--text-color-3);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.orders .container .card .middle:last-child{
+    border-bottom: none;
+}
+
+.orders .container .card .middle .img{
+    flex: 1;
+}
+
+.orders .container .card .middle .img img{
+    width: 90%;
+}
+
+.orders .container .card .middle .productInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .orders .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .orders .content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .orders .container .card .top .info > span{
+        font-size: 14px;
+    }
+
+    .orders .container .card .middle{
+        flex-direction: column;
+    }
+
+    .orders .container .card .middle .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}

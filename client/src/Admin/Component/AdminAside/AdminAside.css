@@ -1,0 +1,159 @@
+.adminAside{
+    position: fixed;
+    width: 23rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-top: 1.4rem;
+    padding-right: 2rem;
+}
+
+.adminAside .a-top{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.adminAside .menu{
+    display: none;
+}
+
+.adminAside .a-top .a-profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+.adminAside .a-top .a-profile .adminImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.adminAside .recentUpdates{
+    margin-top: 1rem;
+}
+
+.adminAside .recentUpdates h2{
+    margin-bottom: 3rem;
+}
+
+.adminAside .recentUpdates .updates{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.adminAside .recentUpdates .updates:hover{
+    box-shadow: none;
+}
+
+.adminAside .recentUpdates .updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.adminAside .sales-analytics{
+    margin-top: 2rem;
+}
+
+.adminAside .sales-analytics h2{
+    margin-bottom: 3rem;
+}
+
+.adminAside .sales-analytics .item{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.adminAside .sales-analytics .item:hover{
+    box-shadow: none;
+}
+
+.adminAside .sales-analytics .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+
+.adminAside .sales-analytics .item .icon{
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    background: var(--color-primary);
+}
+
+.adminAside .sales-analytics .item.offline .icon{
+    background: var(--color-danger);
+}
+
+.adminAside .sales-analytics .item.customers .icon{
+    background: var(--color-success);
+}
+
+.adminAside .sales-analytics .add-product{
+    background: transparent;
+    border:  2px dashed var(--color-primary);
+    display: flex;
+    color: var(--color-primary);
+    align-items: center;
+    justify-content: center;
+}
+
+.adminAside .sales-analytics .add-product .div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.adminAside .sales-analytics .add-product .div h3{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .adminAside .a-top{
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background: var(--color-white);
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        margin: 0;
+        z-index: 6;
+        box-shadow: 0 1rem 1rem var(--color-light);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .adminAside .menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .adminAside .menu .menuIcon{
+        font-size: 40px;
+    }
+
+    .adminAside .recentUpdates,
+    .adminAside .sales-analytics{
+        display: none;
+    }
+}
