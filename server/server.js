@@ -15,6 +15,8 @@ import cors from 'cors'
 import schedule from 'node-schedule'
 import axios from "axios";
 
+import UserModel from './model/User.js'
+
 const app = express()
 app.use(express.json())
 app.use(cookieParser())
@@ -71,6 +73,13 @@ app.use('/api/admin', adminRoutes)
 app.use('/api/auth', authRoutes)
 
 //CORN-JOB
+app.get('/keep-alive', async (req, res) => {
+  const user = await UserModel.find()
+
+  console.log('Total number of bookings.', user.length);
+  res.status(201).json(`Keep alive Request fun: ${user.length}`)
+})
+
 const sendMessage = async () => {
     const res = await axios.get(`${process.env.NEBOUR_URL}/keep-alive`)
 
