@@ -13,6 +13,7 @@ import paystackRoutes from './routes/paystack.routes.js'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import schedule from 'node-schedule'
+import axios from "axios";
 
 const app = express()
 app.use(express.json())
